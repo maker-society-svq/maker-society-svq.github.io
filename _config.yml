@@ -1,13 +1,13 @@
-title:             Clean Blog
-email:             your-email@example.com
-description:       A Blog Theme by Start Bootstrap
+title:             Maker Society   
+email:             makersociety.svq@gmail.com
+description:       La comunidad maker de Sevilla
 author:            Start Bootstrap
 baseurl:           "/startbootstrap-clean-blog-jekyll"
 url:               "http://blackrockdigital.github.io"
 
 # Social Profiles
-twitter_username:  SBootstrap
-github_username:   BlackrockDigital
+twitter_username:  makersocietysvq
+github_username:   maker-society-svq
 facebook_username: StartBootstrap
 
 # Build settings
