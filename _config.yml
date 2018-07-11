@@ -1,8 +1,8 @@
 title:             Maker Society   
 email:             makersociety.svq@gmail.com
 description:       La comunidad maker de Sevilla
-author:            Start Bootstrap
-baseurl:           "/startbootstrap-clean-blog-jekyll"
+author:            Sevilla Maker Society
+baseurl:           "http://www.makersociety.co"
 url:               "http://blackrockdigital.github.io"
 
 # Social Profiles
