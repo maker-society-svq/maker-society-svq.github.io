@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<!-- <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset --> 
+<!-- <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 <!-- Page Header -->
 {% if page.background %}
@@ -12,7 +12,7 @@ layout: default
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>{{ site.title }}</h1>
             {% if site.description %}
@@ -26,7 +26,7 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
 
         {{ content }}
 
@@ -56,13 +56,6 @@ layout: default
 
         {% endfor %} -->
 
-        <p>Bienvenidos a la primera comunidad Maker de la ciudad de Sevilla. ¿No te caben tus proyectos en el salón? ¿Problemas de espacio? ¿No te dejan concentrarte? ¿Las herramientas son muy caras? ¿No tienes ni pajolera idea y necesitas un compañero para sacarlo?</p>
-
-        <p>Este es tu lugar. Somos una asociación sin ánimo de lucro que está poniendo en marcha el primer makerspace de la ciudad, un taller colaborativo al que cualquiera puede asociarse. Derribando las barreras económicas, de espacio y de conocimiento alrededor de la creación digital. </p>
-
-        <p class="mb-5">Así que si quieres pertenecer a una comunidad abierta, donde poder desarrollar tus proyectos o unirte a otros, hablar de tecnología y disfrutar de buena compañía. ¡Bienvenido!</p>
-
-
         <!-- Pager -->
         <!-- <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
@@ -75,82 +68,27 @@ layout: default
   <div>
   <section class="cd-timeline js-cd-timeline">
     <div class="cd-timeline__container">
+
+  {% assign curDate = site.time | date: "%Y-%m-%d" %}
+
+  {% for landmark in site.landmarks %}
+    {% assign date = landmark.date | date: "%Y-%m-%d" %}
+    {% if date < curDate %}
       <div class="cd-timeline__block js-cd-block">
         <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
           <img src="img/cd-icon-picture.svg" alt="Picture">
         </div> <!-- cd-timeline__img -->
 
         <div class="cd-timeline__content js-cd-content">
-          <h2>Title of section 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="cd-timeline__read-more">Read more</a>
-          <span class="cd-timeline__date">Jan 14</span>
+          <h2>{{landmark.title}}</h2>
+          <p>{{landmark.content}}</p>
+          <!-- <a href="#0" class="cd-timeline__read-more">Read more</a> -->
+          <span class="cd-timeline__date">{{landmark.date | date_to_string}}</span>
         </div> <!-- cd-timeline__content -->
+
       </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
-          <img src="img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content js-cd-content">
-          <h2>Title of section 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-          <a href="#0" class="cd-timeline__read-more">Read more</a>
-          <span class="cd-timeline__date">Jan 18</span>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-          <img src="img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content js-cd-content">
-          <h2>Title of section 3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-          <a href="#0" class="cd-timeline__read-more">Read more</a>
-          <span class="cd-timeline__date">Jan 24</span>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
-          <img src="img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content js-cd-content">
-          <h2>Title of section 4</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="cd-timeline__read-more">Read more</a>
-          <span class="cd-timeline__date">Feb 14</span>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
-          <img src="img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content js-cd-content">
-          <h2>Title of section 5</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-          <a href="#0" class="cd-timeline__read-more">Read more</a>
-          <span class="cd-timeline__date">Feb 18</span>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
-          <img src="img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content js-cd-content">
-          <h2>Final Section</h2>
-          <p>This is the content of the last section</p>
-          <span class="cd-timeline__date">Feb 26</span>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
+    {% endif %}
+  {% endfor %}
     </div>
   </section> <!-- cd-timeline -->
 
