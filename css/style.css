@@ -27,8 +27,8 @@ a {
 img {
   max-width: 100%;
 }
-
-h1, h2 {
+*/
+/* h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 } */
@@ -203,7 +203,7 @@ Vertical Timeline - by CodyHouse.co
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-    background: #a7e4ed;
+  background: #a7e4ed;
   -webkit-box-shadow: 0 3px 0 #d7e4ed;
           box-shadow: 0 3px 0 #d7e4ed;
 }
@@ -291,7 +291,7 @@ Vertical Timeline - by CodyHouse.co
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #a7e4ed;
   }
   .cd-timeline__read-more {
     float: left;
@@ -311,7 +311,7 @@ Vertical Timeline - by CodyHouse.co
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: #a7e4ed;
   }
   .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
     float: right;

@@ -17,3 +17,10 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+collections:
+  landmarks:
+    output: true
+  events:
+    output: true
+future: true
