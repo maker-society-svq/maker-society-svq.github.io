@@ -58,8 +58,57 @@
           </li>
           {% endif %}
         </ul>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }} | <a href="cookies" target="_blank" class="info">Política de Cookies</a></p>
       </div>
     </div>
   </div>
+
+  <!--//BLOQUE COOKIES: http://politicadecookies.com -->
+  <div id="barraaceptacion" style="display: block;">
+      <div class="inner">
+          Sep, recogemos cookies para conocer quien nos visita. ¿Nos lo permites?
+          <a href="javascript:void(0);" class="ok" onclick="installCookie();"><b>Si, claro</b></a> | <a href="cookies" target="_blank" class="info">Más información</a>
+      </div>
+  </div>
+
+  <script>
+  function getCookie(c_name){
+      var c_value = document.cookie;
+      var c_start = c_value.indexOf(" " + c_name + "=");
+      if (c_start == -1){
+          c_start = c_value.indexOf(c_name + "=");
+      }
+      if (c_start == -1){
+          c_value = null;
+      }else{
+          c_start = c_value.indexOf("=", c_start) + 1;
+          var c_end = c_value.indexOf(";", c_start);
+          if (c_end == -1){
+              c_end = c_value.length;
+          }
+          c_value = unescape(c_value.substring(c_start,c_end));
+      }
+      return c_value;
+  }
+
+  function setCookie(c_name,value,exdays){
+      var exdate=new Date();
+      exdate.setDate(exdate.getDate() + exdays);
+      var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+      document.cookie=c_name + "=" + c_value;
+  }
+
+  function installCookie(){
+      setCookie('smscookie_ga','1',365);
+      document.getElementById("barraaceptacion").style.display="none";
+  }
+
+  if(getCookie('smscookie_ga')!="1"){
+      document.getElementById("barraaceptacion").style.display="block";
+  } else {
+    document.getElementById("barraaceptacion").style.display="none";
+  }
+
+  </script>
+  <!--//FIN BLOQUE COOKIES-->
 </footer>
