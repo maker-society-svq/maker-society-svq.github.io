@@ -267,10 +267,10 @@ Vertical Timeline - by CodyHouse.co
 
 @media only screen and (min-width: 768px) {
   .cd-timeline__content h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .cd-timeline__content p {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .cd-timeline__read-more,
   .cd-timeline__date {
