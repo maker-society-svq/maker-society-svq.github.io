@@ -4,9 +4,9 @@ description: Actividades
 background: '/img/sms-events.jpg'
 ---
 
-<div class="col-md-20">
 
-    <h2>Próximos eventos</h2>
+
+    <h3>Próximos eventos</h3>
     {% assign curDate = site.time | date: "%Y-%m-%d" %}
 
     <ul>
@@ -18,7 +18,7 @@ background: '/img/sms-events.jpg'
         {% endfor %}
     </ul>
 
-    <h2>Anteriores eventos</h2>
+    <h3>Anteriores eventos</h3>
     <ul>
         {% for event in site.events %}
         {% assign date = event.date | date: "%Y-%m-%d" %}
@@ -27,4 +27,3 @@ background: '/img/sms-events.jpg'
         {% endif %}
         {% endfor %}
     </ul>
-</div>
