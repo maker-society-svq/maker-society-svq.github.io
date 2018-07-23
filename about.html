@@ -1,12 +1,36 @@
 ---
 layout: page
-title: About Me
-description: This is what I do.
+description: Conoce la historia de Sevila Maker Society.
 background: '/img/bg-about.jpg'
 ---
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!</p>
+      <div>
+        <section class="cd-timeline js-cd-timeline">
+          <div class="cd-timeline__container">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus voluptate explicabo, hic porro reprehenderit, quasi? Tenetur ipsum distinctio laboriosam perspiciatis officiis dolore, architecto id.</p>
+            {% assign curDate = site.time | date: "%Y-%m-%d" %}
 
-<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam inventore aspernatur repellendus incidunt adipisci modi voluptates recusandae iste eligendi, repudiandae corporis quod aut, optio! Explicabo quaerat unde voluptatem! Itaque, eum!</p>
+            {% for landmark in site.landmarks %}
+              {% assign date = landmark.date | date: "%Y-%m-%d" %}
+              {% if date < curDate %}
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+                    <img src="img/cd-icon-location.svg" alt="Picture">
+                  </div> <!-- cd-timeline__img -->
+
+                  <div class="cd-timeline__content js-cd-content">
+                    <h2>{{landmark.title}}</h2>
+                    <p>{{landmark.content}}</p>
+                    <!-- <a href="#0" class="cd-timeline__read-more">Read more</a> -->
+                    <span class="cd-timeline__date">{{landmark.date | date_to_string}}</span>
+                  </div> <!-- cd-timeline__content -->
+
+                </div> <!-- cd-timeline__block -->
+              {% endif %}
+            {% endfor %}
+          </div>
+        </section> <!-- cd-timeline -->
+
+        <script src="js/main.js"></script> <!-- Resource JavaScript -->
+      </div>

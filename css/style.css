@@ -8,6 +8,12 @@ Primary style
           box-sizing: border-box;
 }
 
+a {
+  /* color: #acb7c0; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* html {
   font-size: 62.5%;
 }
@@ -28,10 +34,10 @@ img {
   max-width: 100%;
 }
 */
-/* h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-} */
+ h1, h2, h3, h4 {
+  /* font-family: "Open Sans", sans-serif;
+  font-weight: bold; */
+}
 
 /* --------------------------------
 
@@ -203,7 +209,7 @@ Vertical Timeline - by CodyHouse.co
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  background: #a7e4ed;
+  background: #eff0ef99;
   -webkit-box-shadow: 0 3px 0 #d7e4ed;
           box-shadow: 0 3px 0 #d7e4ed;
 }
@@ -228,7 +234,8 @@ Vertical Timeline - by CodyHouse.co
 }
 
 .cd-timeline__content h2 {
-  color: #303e49;
+  font-size: 1.6rem;
+  color: #585858;
 }
 
 .cd-timeline__content p,
@@ -240,6 +247,8 @@ Vertical Timeline - by CodyHouse.co
 .cd-timeline__content p {
   margin: 1em 0;
   line-height: 1.6;
+  font-size: 1.1rem;
+  color: #2E2E2E
 }
 
 .cd-timeline__read-more,
@@ -267,10 +276,12 @@ Vertical Timeline - by CodyHouse.co
 
 @media only screen and (min-width: 768px) {
   .cd-timeline__content h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    color: #585858
   }
   .cd-timeline__content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #2E2E2E
   }
   .cd-timeline__read-more,
   .cd-timeline__date {
