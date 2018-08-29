@@ -1,4 +1,3 @@
-title:             Maker Society
 email:             makersociety.svq@gmail.com
 description:       La comunidad maker de Sevilla
 author:            Sevilla Maker Society
@@ -18,8 +17,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-  
-collections: 
-  events: 
-    output: true 
-future: true 
+collections:
+  landmarks:
+    output: true
+  events:
+    output: true
+future: true
