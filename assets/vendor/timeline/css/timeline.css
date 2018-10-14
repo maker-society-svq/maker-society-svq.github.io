@@ -8,36 +8,8 @@ Primary style
           box-sizing: border-box;
 }
 
-a {
-  /* color: #acb7c0; */
-  text-decoration: none;
-  font-weight: bold;
-}
 
-/* html {
-  font-size: 62.5%;
-}
 
-body {
-  font-size: 1.6rem;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
-}
-
-a {
-  color: #acb7c0;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-*/
- h1, h2, h3, h4 {
-  /* font-family: "Open Sans", sans-serif;
-  font-weight: bold; */
-}
 
 /* --------------------------------
 
@@ -280,7 +252,7 @@ Vertical Timeline - by CodyHouse.co
     color: #585858
   }
   .cd-timeline__content p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: #2E2E2E
   }
   .cd-timeline__read-more,

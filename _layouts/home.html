@@ -14,10 +14,10 @@ layout: default
       <div class="row">
         <div class="col-lg-10 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>{{ site.title }}</h1>
+            <!-- <h1>{{ site.title }}</h1>
             {% if site.description %}
               <span class="subheading">{{ site.description }}</span>
-            {% endif %}
+            {% endif %} -->
           </div>
         </div>
       </div>
@@ -25,45 +25,74 @@ layout: default
   </header>
 
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-md-10 mx-auto">
 
-        {{ content }}
+      <div class="row ">
+        <div class="col-12 py-4" >
+          <h2>La comunidad maker de Sevilla</h2>
+          <div class="col">
 
+          {{ content }}
+          <button type="button" class="btn btn-outline-info" onclick="location.href = '/contact';">Conócenos</a></button>
 
-        <!-- Home Post List -->
-        <!-- {% for post in site.posts limit : 5 %}
+          </div>
+        </div>
+      </div>
 
-          <article class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <h2 class="post-title">{{ post.title }}</h2>
-              {% if post.subtitle %}
-                <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-              {% else %}
-                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-              {% endif %}
-            </a>
-            <p class="post-meta">Posted by
-              {% if post.author %}
-                {{ post.author }}
-              {% else %}
-                {{ site.author }}
-              {% endif %}
-              on
-              {{ post.date | date: '%B %d, %Y' }}</p>
-          </article>
+      <div class="row ">
+        <div class="col col-sm-8 col-md-8">
 
-          <hr>
-
-        {% endfor %} -->
-
-        <!-- Pager -->
-        <!-- <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div> -->
+          <div class="row align-items-center">
+            <div class="col "> </div>
+            <div class="col ">
+              <!-- <img src="../img/sms-logo.svg" class="img-fluid" alt="Logo SMS"> -->
+            </div>
+            <div class="col "> </div>
+          </div>
 
 
+          <h2>Próximos eventos</h2>
+          <div class="col py-4 ">
+              {% assign curDate = site.time | date: "%Y-%m-%d" %}
+              <ul>
+                  {% for event in site.events reversed %}
+                  {% assign date = event.date | date: "%Y-%m-%d" %}
+                  {% if date >= curDate %}
+                  <li><span>{{ event.date | date_to_string }}</span> &raquo; <a href="{{ event.meetup_url }}">{{ event.title }} </a><span>{{events}}</span></li>
+                  {% endif %}
+                  {% endfor %}
+              </ul>
+            <button type="button" class="btn btn-outline-info" onclick="location.href = '/activities';">Ver todos los eventos</a></button>
 
+          </div>
+
+          <h2>Makerspace</h2>
+          <div class="col-12 py-4">
+            <div class="google-maps " >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1584.9217878278594!2d-5.991691716357021!3d37.39353139747881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c04fc1dc283%3A0x5eb69c0d27df95b6!2sCalle+Alc%C3%A1zares%2C+8%2C+41003+Sevilla!5e0!3m2!1ses!2ses!4v1539437092604" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-sm-4 col-md-4">
+          {% twitter https://twitter.com/makersocietysvq maxwidth=350 limit=3 %}
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-12 py-4" >
+          <h2>Agradecimientos</h2>
+          <div class="col-12">
+            <div class="row py-4">
+              <div class="col "><img src="../img/sfp-logo.jpg" class="img-fluid" alt="Logo SMS"></div>
+              <div class="col ">
+                <img src="../img/sms-logo.svg" class="img-fluid" alt="Logo SMS">
+              </div>
+              <div class="col "></div>
+
+            </div>
+            </div>
+        </div>
       </div>
     </div>
+
+
   </div>

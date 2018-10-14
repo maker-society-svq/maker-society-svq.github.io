@@ -1,7 +1,6 @@
 body {
-  font-size: 20px;
-  color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif; }
+  font-size: 16px;
+  color: #212529; }
 
 p {
   line-height: 1.5;
@@ -15,8 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-weight: 800; }
 
 a {
   color: #212529;
@@ -67,7 +65,7 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40; }
@@ -134,7 +132,7 @@ img::-moz-selection {
         transform: translate3d(0, 100%, 0); } }
 
 header.masthead {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -154,13 +152,13 @@ header.masthead {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0 150px;
+    padding: 100px 0 150px;
     color: white; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading,
       header.masthead .post-heading,
       header.masthead .site-heading {
-        padding: 200px 0; } }
+        padding: 100px 0; } }
   header.masthead .page-heading,
   header.masthead .site-heading {
     text-align: center; }
@@ -171,11 +169,11 @@ header.masthead {
     header.masthead .page-heading .subheading,
     header.masthead .site-heading .subheading {
       font-size: 24px;
-      font-weight: 300;
+      font-weight: 500;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading h1,
       header.masthead .site-heading h1 {
@@ -190,12 +188,12 @@ header.masthead {
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; }
   header.masthead .post-heading .meta {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: 'Roboto', 'Lora', 'Times New Roman', serif; }
     header.masthead .post-heading .meta a {
       color: #fff; }
   @media only screen and (min-width: 768px) {
@@ -217,7 +215,7 @@ header.masthead {
     font-weight: 300;
     margin: 0 0 10px; }
 .post-preview > .post-meta {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   margin-top: 0;
   color: #868e96; }
@@ -229,7 +227,7 @@ header.masthead {
       color: #0085A1; }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px; } }
+    font-size: 30px; } }
 
 .floating-label-form-group {
   font-size: 14px;
@@ -248,11 +246,11 @@ header.masthead {
     border-radius: 0;
     background: none;
     box-shadow: none !important;
-    font-family: 'Lora', 'Times New Roman', serif; }
+    font-family: 'Roboto', 'Lora', 'Times New Roman', serif; }
     .floating-label-form-group input::-webkit-input-placeholder,
     .floating-label-form-group textarea::-webkit-input-placeholder {
       color: #868e96;
-      font-family: 'Lora', 'Times New Roman', serif; }
+      font-family: 'Roboto', 'Lora', 'Times New Roman', serif; }
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -298,7 +296,7 @@ footer {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .btn-primary {
   background-color: #0085A1;
@@ -311,6 +309,19 @@ footer {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden; }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
 
 #barraaceptacion {
   display: none;
