@@ -2,7 +2,7 @@ email:             makersociety.svq@gmail.com
 description:       La comunidad maker de Sevilla
 author:            Sevilla Maker Society
 baseurl:           ""
-url:               "https://maker-society-svq.github.io"
+url:               "https://sevillamakers.com/"
 
 # Social Profiles
 twitter_username:  makersocietysvq
@@ -16,6 +16,7 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-twitter-plugin
 
 collections:
   landmarks:
