@@ -3,7 +3,7 @@ description:       La comunidad maker de Sevilla
 author:            MakerSocietySVQ
 url:               "https://sevillamakers.com"
 email:             makersociety.svq@gmail.com
-url1: prueba.com
+lang:              es_ES
 # Seo tag
 twitter:
   username: MakerSocietySVQ
@@ -13,6 +13,14 @@ facebook:
 
 logo:               /img/sms-icon.png
 # Social Profiles
+social:
+  links:
+    - https://www.twitter.com/MakerSocietySVQ
+    - https://www.facebook.com/groups/2058902251011477/
+    - https://github.com/maker-society-svq
+    - https://www.meetup.com/es-ES/Maker-Society/
+    - https://es.linkedin.com/company/makersocietysvq
+
 twitter_username:  MakerSocietySVQ
 github_username:   maker-society-svq
 facebook_username: groups/2058902251011477/
