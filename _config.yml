@@ -26,6 +26,7 @@ plugins:
   - jekyll-paginate
   - jekyll-twitter-plugin
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   landmarks:
