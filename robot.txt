@@ -1,0 +1,4 @@
+# www.robotstxt.org/
+
+User-agent: *
+Sitemap: https://sevillamakers.com/sitemap.xml 
